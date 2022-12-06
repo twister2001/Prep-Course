@@ -134,7 +134,8 @@ function elevarAlCubo(num) {
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
-  // Tu código: console.log(Math.pow(num, exponent));
+  // Tu código: 
+  console.log(Math.pow(num, exponent));
 }
 
 function redondearNumero(num) {
@@ -144,7 +145,8 @@ function redondearNumero(num) {
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
-  // Tu código: console.log(Math.round(num))
+  // Tu código: 
+  console.log(Math.round(num))
   return 4.9;
 }
 
@@ -170,13 +172,15 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-}
+  return (nombre,apellido)
+}combinarNombres("Albeiro" , " Bedoya");
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
-  // Tu código:
-}
+  // Tu código: 
+  return "hola "+ nombre;
+}obtenerSaludo(" albeiro");
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
