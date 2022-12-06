@@ -116,11 +116,19 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num == impar) {
-    return true;
+  var numero = 5;
+    
+  if(numero % 2 == 0){
+      
+      alert( " true");
+  
+  }else{
+      
+      alert(" false");
+      
   }
-  return false;
 }
+esImpar()
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
@@ -225,7 +233,7 @@ function esVocal(letra) {
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  var letra = prompt("Ingrese un Vocal");
+  var letra = alert("Ingrese un Vocal");
   if (letra == "a" | letra == "e" | letra == "i" | letra == "o" | letra == "u") {
     alert("es una vocal")
   } else {
