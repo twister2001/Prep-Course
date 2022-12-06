@@ -32,33 +32,28 @@ function devolverString(str) {
 devolverString("Hola");
 
 function suma(x, y) {
-  // "x" e "y" son números
-  // Suma "x" e "y" juntos y devuelve el valor
-  // Tu código:
-  return x + y;
+  var Suma = x + y;
+  return Suma;
 }
 suma(2, 3);
 
 function resta(x, y) {
-  // Resta "y" de "x" y devuelve el valor
-  // Tu código:
-  return x - y;
-}
-resta(3, 2);
+  var Resta = x - y;
+  return Resta;  
+  }
+  resta(3,2);
 
 function multiplica(x, y) {
-  // Multiplica "x" por "y" y devuelve el valor
-  // Tu código:
-  return x * y;
-}
-multiplica(2, 3);
+  var Multiplica = x * y;
+  return Multiplica;  
+  }
+  multiplica(2,3);
 
 function divide(x, y) {
-  // Divide "x" entre "y" y devuelve el valor
-  // Tu código:
-  return x / y;
-}
-divide(3, 2);
+  var Divide = x / y;
+  return Divide;  
+  }
+  divide(2,3);
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
@@ -69,12 +64,18 @@ function sonIguales(x, y) {
   }
   return false;
 }
+sonIguales(3,5)
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
+  if(str1 === str2){
+    return true;
+  }
+  return false;
 }
+tienenMismaLongitud("str1","str2");
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
@@ -134,7 +135,7 @@ function elevarAlCubo(num) {
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
-  // Tu código: 
+  // Tu código:
   console.log(Math.pow(num, exponent));
 }
 
@@ -145,8 +146,8 @@ function redondearNumero(num) {
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
-  // Tu código: 
-  console.log(Math.round(num))
+  // Tu código:
+  console.log(Math.round(num));
   return 4.9;
 }
 
@@ -172,15 +173,17 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return (nombre,apellido)
-}combinarNombres("Albeiro" , " Bedoya");
+  return nombre, apellido;
+}
+combinarNombres("Albeiro", " Bedoya");
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
-  // Tu código: 
-  return "hola "+ nombre;
-}obtenerSaludo(" albeiro");
+  // Tu código:
+  return "hola " + nombre;
+}
+obtenerSaludo(" albeiro");
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
