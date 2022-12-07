@@ -29,7 +29,7 @@ function devolverString(str) {
   // Tu código:
   return str;
 }
-devolverString("Hola");
+
 
 function suma(x, y) {
   var Suma = x + y;
@@ -106,25 +106,26 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num == 2) {
+  if (num % 2 === 0) {
     return true;
   }
   return false;
 }
+esPar()
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  var numero = 5;
+  var numero = 9;
     
   if(numero % 2 == 0){
       
-      alert( " true");
+      return(  true);
   
   }else{
       
-      alert(" false");
+      return( false);
       
   }
 }
@@ -134,34 +135,46 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
+  var num = Math.pow(8, 2);
+  return num;
+   
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
+  var num = Math.pow(8,3);
+  return(num);
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  console.log(Math.pow(num, exponent));
+  return(Math.pow(5, 2));
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
+  var num = Math.floor(4.5);
+  return(num);
 }
+redondearNumero()
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  console.log(Math.round(num));
-  return 4.9;
+  var num = Math.round(5.9);
+  return num;
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
+  var inicio = 0;
+  var final = 1;
+  let Aleatorio = inicio + Math.floor(Math.ramdom() * final)
+  return Aleatorio;
 }
 
 function esPositivo(numero) {
@@ -233,12 +246,15 @@ function esVocal(letra) {
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  var letra = alert("Ingrese un Vocal");
-  if (letra == "a" | letra == "e" | letra == "i" | letra == "o" | letra == "u") {
-    alert("es una vocal")
-  } else {
-    alert("Dato Incorrecto")
-  }
+ var correcto = "Es vocal";
+ var incorrecto = "Dato Incorrecto";
+ if(letra.length > 1) return incorrecto;
+ if(letra=== "a" ||letra=== "e"| letra=== "i"|letra=== "o"|letra=== "u"){
+  return correcto;
+ }
+ else return  incorrecto;  
+ 
+ 
 
 }
 esVocal()
